@@ -34,7 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         // Configuración del correo
         $mail->setFrom($email, $name);
-        $mail->addAddress('rija.patam@gmail.com'); // Reemplaza con la dirección de destino
+        $mail->addAddress('civitas.informes@gmailcom'); // Reemplaza con la dirección de destino
         $mail->Subject = 'Nuevo mensaje de contacto';
         $mail->Body = "Nombre: $name\nCorreo: $email\nTeléfono: $phone\nMensaje:\n$message";
 
